@@ -4,7 +4,7 @@
 
 # Usage
 
-##Dependency
+## Dependency
 
 This is the file only to illustrate the usage of my codes, for more detailed information, please refer to the report named ```VE444_517370910123_Liqin_Zhang_Hwk3.pdf```.
 
