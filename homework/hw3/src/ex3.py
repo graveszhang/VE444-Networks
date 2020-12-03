@@ -1,26 +1,26 @@
-def PageRank(AdMatrix, degree, beta=0.85):
+import numpy as np
+
+def PageRank(AdMatrix, beta=0.85):
     # beta is the probability of following a link, set 0.85 by default
-    rankscore = [1/6 for i in range(6)]
-    old_rankscore = rankscore[:]
-    N = 6
-    j = 0
+    r = [1/6 for i in range(6)]
+    N = [[1/6 for i in range(6)] for j in range(6)]
+    r = np.array(r)
+    M = np.array(AdMatrix)
+    N = np.array(N)
+    M = M.transpose()
+    d = getDegree(M)
+    d[-1] = 1
+    M = np.divide(M,d)
+    A = beta * M + (1 - beta) * N
+    A[:,-1] = 1/6 # Lead to converge
+    r_cpy = r.copy()
     while True:
-        i = 0
-        curr_score = 0
-        for row in AdMatrix:
-            if row[j] == 1:
-                curr_score += beta*(rankscore[i]/degree[i])
-            i += 1
-        rankscore[j] = ((1-beta)/N) + curr_score
-        j += 1
-        if j == 6: # finish one round updating
-            j = 0  # start new round updating
-            if rankscore == old_rankscore: # converge
-                break
-            else:
-                # update a copy to check if converge
-                old_rankscore = rankscore[:]
-    return rankscore
+        r = A.dot(r_cpy)
+        if (r == r_cpy).all():
+            break
+        else:
+            r_cpy = r
+    return r
 
 def getDegree(AdMatrix):
     deg = [0 for i in range(6)]
@@ -44,10 +44,9 @@ if __name__ == '__main__':
     s = [1, 1, 2, 2, 3, 3, 3, 4, 5]
     t = [2, 5, 3, 4, 4, 5, 6, 1, 1]
     AdMatrix = Adjacency_Display(s,t)
-    degree = getDegree(AdMatrix)
-    rankscore = PageRank(AdMatrix, degree)
+    rank = PageRank(AdMatrix)
     print('NodeName\t', 'PageRankScore')
     node = 1
-    for i in rankscore:
+    for i in rank:
         print(node,'\t\t\t',i)
         node += 1
