@@ -12,9 +12,3 @@ This repository contains the lecture materials for VE444 Introduction to Network
 ![map](https://github.com/graveszhang/VE444-Networks/blob/main/project/report/img/map.png)
 ![map](https://github.com/graveszhang/VE444-Networks/blob/main/project/report/img/node2.png)
 ![map](https://github.com/graveszhang/VE444-Networks/blob/main/project/report/img/node1.png)
-![map](https://github.com/graveszhang/VE444-Networks/blob/main/project/report/img/sir.png)
-![map](https://github.com/graveszhang/VE444-Networks/blob/main/project/report/img/model1.png)
-
-[Poster](https://github.com/graveszhang/VE444-Networks/blob/main/project/poster/Group%205%20Poster.pdf)
-
-[Final report](https://github.com/graveszhang/VE444-Networks/blob/main/project/report/Group5_Project_Final_Report.pdf)
