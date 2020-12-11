@@ -102,14 +102,13 @@ def visualize_graph(data, labels, positions=None):
 
 	plt.figure(1, figsize=(14, 12))
 
-	nx.draw_networkx_nodes(data_graph, pos=pos, nodelist=data_graph.nodes, node_color=colors, alpha=1,node_size=700,cmap=plt.cm.jet)
+	nx.draw_networkx_nodes(data_graph, pos=pos, nodelist=data_graph.nodes, alpha=0.1,node_size=700,cmap=plt.cm.jet)
 	# nx.draw(data_graph, cmap=plt.get_cmap('Set1'), node_size=75, linewidths=6)
 	nx.draw_networkx_edges(data_graph, pos=pos, edgelist=data_graph.edges, width=1.0, alpha=0.5)
 
 	nx.draw_networkx_labels(data_graph, pos=pos, labels=labels, font_size=16)
-	# plt.savefig(SOURCE_PATH / '../results/usnode.png')
+	# plt.savefig(SOURCE_PATH / '../results/usnode2.png')
 	plt.show()
-
 
 
 if __name__ == '__main__':
@@ -118,8 +117,8 @@ if __name__ == '__main__':
 	with open(SOURCE_PATH / '../dataset/generated/usa/node_to_ss', 'rb') as file:
 		node_to_ss = pickle.load(file)
 
-	# visualize_graph(data, node_to_ss)
-	visualize_on_map(data, node_to_ss)
+	visualize_graph(data, node_to_ss)
+	# visualize_on_map(data, node_to_ss)
 	# Load to node to ss dict
 
 
