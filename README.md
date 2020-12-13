@@ -12,3 +12,6 @@ This repository contains the lecture materials for VE444 Introduction to Network
 ![map](https://github.com/graveszhang/VE444-Networks/blob/main/project/report/img/map.png)
 ![map](https://github.com/graveszhang/VE444-Networks/blob/main/project/report/img/node2.png)
 ![map](https://github.com/graveszhang/VE444-Networks/blob/main/project/report/img/node1.png)
+
+## Honor Code
+If there are same questions or labs in the future, it is the responsibility of JI students not to copy or modify these codes, or TeX files because it is against the Honor Code. The owner of this repository dosen't take any commitment for other's faults.
