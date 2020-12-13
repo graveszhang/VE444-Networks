@@ -9,6 +9,8 @@ This repository contains the lecture materials for VE444 Introduction to Network
 |Homework 3 |[SIR](https://github.com/graveszhang/VE444-Networks/blob/main/homework/hw3/src/ex1.py), [Greedy Net](https://github.com/graveszhang/VE444-Networks/blob/main/homework/hw3/src/ex2.2.py), [PageRank](https://github.com/graveszhang/VE444-Networks/blob/main/homework/hw3/src/ex3.py)|Dec 1, 2020|
 
 ## Project
+[[Proposal]](https://github.com/graveszhang/VE444-Networks/blob/main/project/proposal.pdf)
+[[Poster]](https://github.com/graveszhang/VE444-Networks/blob/main/project/poster/Group%205%20Poster.pdf)
 ![map](https://github.com/graveszhang/VE444-Networks/blob/main/project/report/img/map.png)
 ![map](https://github.com/graveszhang/VE444-Networks/blob/main/project/report/img/node2.png)
 ![map](https://github.com/graveszhang/VE444-Networks/blob/main/project/report/img/node1.png)
